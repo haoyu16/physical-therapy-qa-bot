@@ -155,3 +155,5 @@ cython_debug/
 PT_resources/
 
 chroma_db/
+
+*.jsonl
