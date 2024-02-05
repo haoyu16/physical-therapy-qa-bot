@@ -5,9 +5,8 @@ from doc_loader import constants
 
 load_dotenv()
 
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
 
-import os
 from typing import Any, Dict, List
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.vectorstores.chroma import Chroma
@@ -30,7 +29,9 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
     return qa.invoke({"question": query, "chat_history": chat_history})
 
 
-generated = run_llm(
-    query="What is the condition associated with Shoulder Pain and Mobility Deficits?"
-)
-print(generated)
+if __name__ == "__main__":
+
+    generated = run_llm(
+        query="What is the condition associated with Shoulder Pain and Mobility Deficits?"
+    )
+    print(generated)
