@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+openai = "*"
+chromadb = "*"
+docx2txt = "*"
+python-docx = "*"
+pdf2image = "*"
+"pdfminer.six" = "*"
+opencv-python = "*"
+unstructured = {extras = ["all-docs"], version = "*"}
+sentence-transformers = "*"
+langchain-openai = "*"
+streamlit = "*"
+streamlit-chat = "*"
+poppler-utils = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.11"

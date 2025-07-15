@@ -1,1 +1,1 @@
-An chatbot which specializes in answering physical therapy questions
+A chatbot which specializes in answering physical therapy questions
